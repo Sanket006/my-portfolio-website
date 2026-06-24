@@ -1,0 +1,110 @@
+.terminal-container {
+  width: 100%;
+  max-width: 640px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  background: rgba(8, 10, 18, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(0, 240, 255, 0.05);
+  margin-top: 2.5rem;
+  text-align: left;
+}
+
+.terminal-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1rem;
+  background: rgba(255, 255, 255, 0.04);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  position: relative;
+}
+
+.terminal-buttons {
+  position: absolute;
+  left: 1rem;
+  display: flex;
+  gap: 7px;
+}
+
+.terminal-buttons span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  cursor: default;
+}
+
+.close    { background-color: #ff5f56; }
+.minimize { background-color: #ffbd2e; }
+.maximize { background-color: #27c93f; }
+
+.terminal-title {
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+}
+
+.terminal-body {
+  padding: 0.85rem 1rem;
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 0.88rem;
+  color: #a0aab5;
+  flex-grow: 1;
+  overflow-y: auto;
+  cursor: text;
+  line-height: 1.6;
+}
+
+.terminal-body::-webkit-scrollbar { width: 5px; }
+.terminal-body::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 3px;
+}
+
+.terminal-line {
+  margin-bottom: 0.25rem;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.terminal-line.command { color: #e6e6e6; font-weight: 500; margin-top: 0.5rem; }
+.terminal-line.response { color: #a0aab5; }
+.terminal-line.system  { color: #5e6b7d; font-style: italic; }
+.terminal-line.info    { color: #b026ff; }
+.terminal-line.success { color: #27c93f; }
+.terminal-line.warning { color: #ffbd2e; }
+
+.terminal-input-line {
+  display: flex;
+  align-items: center;
+  margin-top: 0.25rem;
+}
+
+.prompt {
+  color: #27c93f;
+  margin-right: 6px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  font-weight: 600;
+}
+
+.terminal-input-line input {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 0.88rem;
+  flex-grow: 1;
+  outline: none;
+  caret-color: var(--accent-cyan);
+}
+
+@media (max-width: 600px) {
+  .terminal-container {
+    height: 320px;
+    font-size: 0.82rem;
+  }
+}
