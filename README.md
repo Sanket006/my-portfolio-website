@@ -14,12 +14,12 @@ A premium, production-ready portfolio website built with **React 19** and **Vite
 | Feature | Details |
 |---|---|
 | **Neon Glassmorphism UI** | Cyber-dark aesthetic with cyan/purple gradient accents |
-| **Interactive Terminal** | Fully functional in-browser terminal with custom commands (`whoami`, `skills`, `contact`, `clear`) |
+| **Interactive Terminal** | Fully functional in-browser terminal with DevOps commands (`help`, `neofetch`, `kubectl`, `docker`, `terraform`, `whoami`, `skills`, `contact`, etc.) |
 | **Scroll Reveal** | IntersectionObserver-based section fade-in animations |
-| **Projects Section** | 6 real GitHub projects with tech tags and live links |
+| **Projects Section** | 12 real DevOps & Software engineering projects with tech tags and GitHub links |
 | **Experience Timeline** | Vertical timeline showing career history & certifications |
-| **Contact Form** | Controlled form with `mailto:` fallback — zero backend required |
-| **Resume Download** | One-click PDF download from the hero section |
+| **Contact Form** | Controlled form with Formspree integration and email fallbacks |
+| **Resume Download** | One-click PDF download from the hero and navigation sections |
 | **GitHub Stats** | Live badge via `github-readme-stats` API in the About section |
 | **Responsive Layout** | Mobile-first CSS with Flexbox and Grid |
 | **SEO Ready** | Full meta tags, Open Graph, and Twitter Card support |
@@ -47,14 +47,14 @@ A premium, production-ready portfolio website built with **React 19** and **Vite
 devops-portfolio/
 ├── public/
 │   ├── favicon.svg         # Custom SVG favicon
-│   └── resume.pdf          # Downloadable resume
+│   └── my_devops_resume.pdf # Downloadable resume file
 ├── src/
 │   ├── components/
 │   │   ├── Navbar.jsx / .css
 │   │   ├── Hero.jsx / .css      # Intro + Terminal widget
 │   │   ├── About.jsx / .css     # Bio + GitHub Stats + Skills grid
 │   │   ├── Experience.jsx / .css
-│   │   ├── Projects.jsx / .css  # 6 real GitHub projects
+│   │   ├── Projects.jsx / .css  # 12 real DevOps projects
 │   │   ├── Contact.jsx / .css   # Controlled form with mailto fallback
 │   │   ├── Footer.jsx / .css
 │   │   └── Terminal.jsx / .css  # Interactive terminal widget
@@ -140,28 +140,34 @@ docker run -p 8080:80 devops-portfolio
 | Contact email | `src/components/Contact.jsx` — update the `mailto:` address |
 | GitHub / LinkedIn links | `src/components/Footer.jsx` |
 | Color palette & fonts | `src/index.css` (CSS variables in `:root`) |
-| Resume PDF | Replace `public/resume.pdf` |
+| Resume PDF | Replace public/my_devops_resume.pdf |
 
 ---
 
 ## 🗂 Open Source Projects Featured
 
-| Project | Stack | Link |
-|---|---|---|
-| `flight-reservation-app` | Spring Boot, React, Kubernetes, Docker | [GitHub](https://github.com/Sanket006/flight-reservation-app) |
-| `DevOps-Interview-Questions` | AWS, Docker, K8s, Terraform, Jenkins | [GitHub](https://github.com/Sanket006/DevOps-Interview-Questions) |
-| `terraform-aws-iac` | Terraform, AWS, HCL | [GitHub](https://github.com/Sanket006/terraform-aws-iac) |
-| `nodejs-app-jenkins-pipeline` | Jenkins, Node.js, Docker, Groovy | [GitHub](https://github.com/Sanket006/nodejs-app-jenkins-pipeline) |
-| `Linux-Automation-Shell-Scripting` | Bash, Linux, Cron, Systemd | [GitHub](https://github.com/Sanket006/Linux-Automation-Shell-Scripting) |
-| `student-app-kubernetes` | Kubernetes, React, Spring Boot, MariaDB | [GitHub](https://github.com/Sanket006/student-app-kubernetes) |
+| Project | Stack | Role / Category | Link |
+|---|---|---|---|
+| `Three-Tier DevSecOps on AWS EKS` 🌟 | Jenkins, Terraform, ArgoCD, Docker, Kubernetes, AWS EKS | DevSecOps & Cloud (Featured) | [GitHub](https://github.com/Sanket006) |
+| `Go GitOps Delivery Pipeline` 🌟 | GitHub Actions, ArgoCD, Docker, Kubernetes, AWS EKS, Helm, Go | GitOps & CI/CD (Featured) | [GitHub](https://github.com/Sanket006) |
+| `flight-reservation-app` 🌟 | Spring Boot, React, Kubernetes, Docker, MySQL | Full-Stack & K8s (Featured) | [GitHub](https://github.com/Sanket006/flight-reservation-app) |
+| `2048-eks-deployment` | AWS EKS, Fargate, ALB, Helm | Kubernetes & AWS Fargate | [GitHub](https://github.com/Sanket006/2048-eks-deployment) |
+| `jenkins-cicd-pipelines` | Jenkins, Groovy, Docker, AWS EKS, S3, Terraform | CI/CD Patterns Library | [GitHub](https://github.com/Sanket006/jenkins-cicd-pipelines) |
+| `student-app-docker-compose` | Docker, Docker Compose, Apache, Tomcat, MariaDB | Containerisation | [GitHub](https://github.com/Sanket006/student-app-docker-compose) |
+| `crud-app-aws-ec2-rds` | Spring Boot, React, AWS EC2, RDS, VPC | Cloud Deployment | [GitHub](https://github.com/Sanket006/crud-app-aws-ec2-rds) |
+| `terraform-aws-iac` | Terraform, AWS, HCL | Infrastructure as Code | [GitHub](https://github.com/Sanket006/terraform-aws-iac) |
+| `nodejs-app-jenkins-pipeline` | Jenkins, Node.js, Docker, Groovy | CI/CD & Jenkins | [GitHub](https://github.com/Sanket006/nodejs-app-jenkins-pipeline) |
+| `Linux-Automation-Shell-Scripting` | Bash, Linux, Cron, Systemd | Scripting & Linux | [GitHub](https://github.com/Sanket006/Linux-Automation-Shell-Scripting) |
+| `DevOps-Interview-Questions` | AWS, Docker, Kubernetes, Terraform, Jenkins | Knowledge Base | [GitHub](https://github.com/Sanket006/DevOps-Interview-Questions) |
+| `student-app-kubernetes` | Kubernetes, React, Spring Boot, MariaDB | Microservices Deployment | [GitHub](https://github.com/Sanket006/student-app-kubernetes) |
 
 ---
 
 ## 📬 Contact
 
-- **Email:** sanketchopade6@gmail.com
+- **Email:** [chopade.sanket@outlook.com](mailto:chopade.sanket@outlook.com)
 - **GitHub:** [github.com/Sanket006](https://github.com/Sanket006)
-- **LinkedIn:** [linkedin.com/in/sanket-chopade](https://linkedin.com/in/sanket-chopade)
+- **LinkedIn:** [linkedin.com/in/sanketchopade07](https://linkedin.com/in/sanketchopade07)
 
 ---
 
@@ -171,4 +177,4 @@ This project is open source under the [MIT License](LICENSE). Feel free to fork 
 
 ---
 
-*Designed & Built by Sanket Chopade © 2025*
+*Designed & Built by Sanket Chopade © 2026*

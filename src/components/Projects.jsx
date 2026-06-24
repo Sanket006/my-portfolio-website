@@ -84,7 +84,7 @@ const projects = [
       github: 'https://github.com/Sanket006/flight-reservation-app',
       live: 'https://github.com/Sanket006/flight-reservation-app#readme',
     },
-    featured: false,
+    featured: true,
   },
   {
     title: 'terraform-aws-iac',
@@ -194,14 +194,16 @@ const Projects = () => {
         <div className="projects-grid">
           {filtered.map((project, index) => (
             <div key={index} className={`project-card glass-panel ${project.featured ? 'featured' : ''}`}>
-              {project.featured && (
-                <span className="featured-badge">⭐ Featured</span>
-              )}
               <div className="project-header">
-                <div className="folder-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
-                  </svg>
+                <div className="project-header-left">
+                  <div className="folder-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
+                    </svg>
+                  </div>
+                  {project.featured && (
+                    <span className="featured-badge">⭐ Featured</span>
+                  )}
                 </div>
                 <div className="project-links">
                   <a href={project.links.github} target="_blank" rel="noopener noreferrer" title="View on GitHub">

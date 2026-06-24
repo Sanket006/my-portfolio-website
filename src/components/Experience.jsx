@@ -23,7 +23,7 @@ const experiences = [
     title: 'Cloud & DevOps Engineer Trainee',
     company: 'Cloudblitz | Powered by Greamio',
     date: 'Jun 2024 – Sep 2024 · 4 months',
-    location: 'Nagpur',
+    location: 'Nagpur, Maharashtra, India',
     description: [
       'Built CI/CD pipelines using Jenkins and GitHub to automate application build and deployment workflows.',
       'Deployed and managed containerised applications using Docker and Kubernetes.',
@@ -63,7 +63,7 @@ const education = {
   institution: 'Rashtrasant Tukadoji Maharaj Nagpur University',
   location: 'Nagpur, Maharashtra, India',
   dates: 'Nov 2021 – May 2025',
-  cgpa: '7.9 / 10',
+  cgpa: '8.58 / 10',
 };
 
 const Experience = () => (

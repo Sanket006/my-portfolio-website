@@ -69,7 +69,7 @@ const Hero = () => {
           </p>
           <div className="hero-cta">
             <a href="#projects" className="btn btn-primary">View Projects</a>
-            <a href="/resume.pdf" download className="btn btn-outline">Download Resume</a>
+            <a href="/my_devops_resume.pdf" download className="btn btn-outline">Download Resume</a>
           </div>
           <Terminal />
         </div>

@@ -38,7 +38,7 @@ const Navbar = () => {
         </ul>
 
         <div className="nav-right">
-          <a href="/resume.pdf" className="btn btn-outline nav-btn" target="_blank" rel="noopener noreferrer">
+          <a href="/my_devops_resume.pdf" className="btn btn-outline nav-btn" target="_blank" rel="noopener noreferrer">
             Resume
           </a>
           {/* Hamburger button (mobile only) */}
@@ -62,7 +62,7 @@ const Navbar = () => {
           <li><a href="#projects" onClick={handleNavClick}>Projects</a></li>
           <li><a href="#contact" onClick={handleNavClick}>Contact</a></li>
           <li>
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" onClick={handleNavClick}>
+            <a href="/my_devops_resume.pdf" target="_blank" rel="noopener noreferrer" onClick={handleNavClick}>
               Download Resume
             </a>
           </li>
