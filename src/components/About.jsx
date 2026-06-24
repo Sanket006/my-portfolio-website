@@ -16,7 +16,12 @@ const skills = [
   { name: 'Helm',           icon: 'devicon-helm-plain colored',                       level: 72 },
 ];
 
-const learning = ['AWS Solutions Architect (SAA-C03)', 'Platform Engineering'];
+const learning = [
+  'AWS Solutions Architect (SAA-C03)',
+  'Certified Kubernetes Administrator (CKA)',
+  'Platform Engineering',
+  'DevSecOps & GitOps',
+];
 
 const SkillBar = ({ skill, animate }) => (
   <div className="skill-row">
@@ -73,7 +78,7 @@ const About = () => {
             </p>
 
             <div className="currently-learning">
-              <span className="learning-label">🔥 Currently Studying:</span>
+              <span className="learning-label">Currently Studying:</span>
               <div className="learning-tags">
                 {learning.map((item, i) => (
                   <span key={i} className="learning-tag">{item}</span>

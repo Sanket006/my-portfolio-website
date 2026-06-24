@@ -4,10 +4,10 @@ import Terminal from './Terminal';
 
 const roles = [
   'Cloud & DevOps Engineer',
-  'Kubernetes Specialist',
-  'Infrastructure Architect',
-  'CI/CD Automation Expert',
-  'AWS Solutions Builder',
+  'Kubernetes & EKS Engineer',
+  'CI/CD & GitOps Engineer',
+  'Infrastructure as Code Builder',
+  'DevSecOps Practitioner',
 ];
 
 const Hero = () => {
@@ -15,6 +15,7 @@ const Hero = () => {
   const [displayed, setDisplayed] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
   const [charIndex, setCharIndex] = useState(0);
+  const resumeUrl = `${import.meta.env.BASE_URL}my_devops_resume.pdf`;
 
   useEffect(() => {
     const currentRole = roles[roleIndex];
@@ -69,7 +70,7 @@ const Hero = () => {
           </p>
           <div className="hero-cta">
             <a href="#projects" className="btn btn-primary">View Projects</a>
-            <a href="/my_devops_resume.pdf" download className="btn btn-outline">Download Resume</a>
+            <a href={resumeUrl} download="Sanket_DevOps_Resume.pdf" className="btn btn-outline">Download Resume</a>
           </div>
           <Terminal />
         </div>

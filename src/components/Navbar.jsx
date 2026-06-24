@@ -5,6 +5,7 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
+  const resumeUrl = `${import.meta.env.BASE_URL}my_devops_resume.pdf`;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,7 +39,7 @@ const Navbar = () => {
         </ul>
 
         <div className="nav-right">
-          <a href="/my_devops_resume.pdf" download className="btn btn-outline nav-btn" target="_blank" rel="noopener noreferrer">
+          <a href={resumeUrl} download="Sanket_DevOps_Resume.pdf" className="btn btn-outline nav-btn">
             Resume
           </a>
           {/* Hamburger button (mobile only) */}
@@ -62,7 +63,7 @@ const Navbar = () => {
           <li><a href="#projects" onClick={handleNavClick}>Projects</a></li>
           <li><a href="#contact" onClick={handleNavClick}>Contact</a></li>
           <li>
-            <a href="/my_devops_resume.pdf" download target="_blank" rel="noopener noreferrer" onClick={handleNavClick}>
+            <a href={resumeUrl} download="Sanket_DevOps_Resume.pdf" onClick={handleNavClick}>
               Download Resume
             </a>
           </li>
