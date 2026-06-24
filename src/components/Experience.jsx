@@ -39,21 +39,21 @@ const certifications = [
     title: 'Certified Kubernetes Administrator',
     short: 'CKA',
     issuer: 'The Linux Foundation',
-    year: 'In Progress',
+    year: 'Planning',
     color: '#326CE5',
     icon: 'devicon-kubernetes-plain',
-    badge: '⏳',
-    inProgress: true,
+    badge: '🎯',
+    isPlanned: true,
   },
   {
     title: 'AWS Certified Solutions Architect – Associate',
     short: 'SAA-C03',
     issuer: 'Amazon Web Services',
-    year: 'In Progress',
+    year: 'Planning',
     color: '#FF9900',
     icon: 'devicon-amazonwebservices-plain-wordmark',
-    badge: '⏳',
-    inProgress: true,
+    badge: '🎯',
+    isPlanned: true,
   },
 ];
 
@@ -103,7 +103,7 @@ const Experience = () => (
         {certifications.map((cert, i) => (
           <div
             key={i}
-            className={`cert-card glass-panel ${cert.inProgress ? 'in-progress' : ''}`}
+            className={`cert-card glass-panel ${cert.inProgress ? 'in-progress' : ''} ${cert.isPlanned ? 'planned' : ''}`}
             style={{ '--cert-color': cert.color }}
           >
             <div className="cert-icon-wrapper">
@@ -116,8 +116,8 @@ const Experience = () => (
               {cert.credentialId && (
                 <p className="cert-credential">ID: {cert.credentialId}</p>
               )}
-              <span className={`cert-year ${cert.inProgress ? 'pill-orange' : 'pill-green'}`}>
-                {cert.inProgress ? '⏳ ' : '✓ '}{cert.year}
+              <span className={`cert-year ${cert.inProgress ? 'pill-orange' : cert.isPlanned ? 'pill-blue' : 'pill-green'}`}>
+                {cert.inProgress ? '⏳ ' : cert.isPlanned ? '🎯 ' : '✓ '}{cert.year}
               </span>
             </div>
           </div>

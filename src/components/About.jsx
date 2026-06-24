@@ -65,7 +65,7 @@ const About = () => {
             <p>
               Delivered automated deployment workflows that reduced manual intervention
               and improved release reliability for a microservices-based e-commerce
-              platform. Currently preparing for the{' '}
+              platform. Planning to pursue the{' '}
               <span className="highlight">CKA certification</span>, I bring hands-on
               expertise in Kubernetes cluster administration, GitOps, DevSecOps,
               and Linux administration — with a strong focus on security, scalability, and

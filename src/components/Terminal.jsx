@@ -33,7 +33,7 @@ const Terminal = () => {
     skills: () => [
       { text: 'Technical Arsenal:', type: 'info' },
       { text: '  Cloud       → AWS (EKS, EC2, S3, IAM, VPC)', type: 'response' },
-      { text: '  Containers  → Docker, Kubernetes (CKA Certified)', type: 'response' },
+      { text: '  Containers  → Docker, Kubernetes (CKA Planned)', type: 'response' },
       { text: '  IaC         → Terraform, HCL', type: 'response' },
       { text: '  CI/CD       → Jenkins, GitHub Actions, ArgoCD', type: 'response' },
       { text: '  Monitoring  → Prometheus, Grafana', type: 'response' },
@@ -43,10 +43,10 @@ const Terminal = () => {
 
     certifications: () => [
       { text: '🏆 Certifications:', type: 'info' },
-      { text: '  [⏳] Certified Kubernetes Administrator (CKA)', type: 'warning' },
-      { text: '      Issuer: Linux Foundation | Status: In Progress', type: 'response' },
-      { text: '  [⏳] AWS Solutions Architect – Associate (SAA-C03)', type: 'warning' },
-      { text: '      Issuer: Amazon Web Services | Status: In Progress', type: 'response' },
+      { text: '  [🎯] Certified Kubernetes Administrator (CKA)', type: 'info' },
+      { text: '      Issuer: Linux Foundation | Status: Planned', type: 'response' },
+      { text: '  [🎯] AWS Solutions Architect – Associate (SAA-C03)', type: 'info' },
+      { text: '      Issuer: Amazon Web Services | Status: Planned', type: 'response' },
     ],
 
     'ls projects': () => [
@@ -112,7 +112,7 @@ const Terminal = () => {
       { text: '   . [K8s] .                   ─────────────────', type: 'response' },
       { text: ' . [Docker][TF] .              OS: Cloud Linux 5.0', type: 'response' },
       { text: '   . [AWS]  .                  Role: DevOps Engineer', type: 'response' },
-      { text: '     .  .  .                   Cert: CKA ✓', type: 'response' },
+      { text: '     .  .  .                   Cert: CKA (Planned)', type: 'response' },
       { text: '                               Stack: K8s+AWS+TF+CI/CD', type: 'response' },
       { text: '                               Status: Open to Work ●', type: 'success' },
     ],
