@@ -16,7 +16,7 @@ const skills = [
   { name: 'Helm',           icon: 'devicon-helm-plain colored',                       level: 72 },
 ];
 
-const learning = ['AWS Solutions Architect (SAA-C03)', 'Platform Engineering', 'GitOps / Flux'];
+const learning = ['AWS Solutions Architect (SAA-C03)', 'Platform Engineering'];
 
 const SkillBar = ({ skill, animate }) => (
   <div className="skill-row">
