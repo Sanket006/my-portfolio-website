@@ -26,6 +26,25 @@ A premium, production-ready portfolio website built with **React 19** and **Vite
 
 ---
 
+## Current Profile Highlights
+
+### Rotating Hero Roles
+
+- Cloud & DevOps Engineer
+- Kubernetes & EKS Engineer
+- CI/CD & GitOps Engineer
+- Infrastructure as Code Builder
+- DevSecOps Practitioner
+
+### Currently Studying
+
+- AWS Solutions Architect (SAA-C03)
+- Certified Kubernetes Administrator (CKA)
+- Platform Engineering
+- DevSecOps & GitOps
+
+---
+
 ## 🛠 Tech Stack
 
 | Layer | Technology | Version |
@@ -140,7 +159,7 @@ docker run -p 8080:80 devops-portfolio
 | Contact email | `src/components/Contact.jsx` — update the `mailto:` address |
 | GitHub / LinkedIn links | `src/components/Footer.jsx` |
 | Color palette & fonts | `src/index.css` (CSS variables in `:root`) |
-| Resume PDF | Replace public/my_devops_resume.pdf |
+| Resume PDF | Replace `public/my_devops_resume.pdf`; hero and navbar buttons download it as `Sanket_DevOps_Resume.pdf` |
 
 ---
 
