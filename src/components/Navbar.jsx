@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './Navbar.css';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
-  const resumeUrl = `${import.meta.env.BASE_URL}my_devops_resume.pdf`;
+  const resumeUrl = `${import.meta.env.BASE_URL}Sanket_Chopade_Devops_Engineer_Resume.pdf`;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,7 +39,7 @@ const Navbar = () => {
         </ul>
 
         <div className="nav-right">
-          <a href={resumeUrl} download="Sanket_DevOps_Resume.pdf" className="btn btn-outline nav-btn">
+          <a href={resumeUrl} download="Sanket_Chopade_Devops_Engineer_Resume.pdf" className="btn btn-outline nav-btn">
             Resume
           </a>
           {/* Hamburger button (mobile only) */}
@@ -63,7 +63,7 @@ const Navbar = () => {
           <li><a href="#projects" onClick={handleNavClick}>Projects</a></li>
           <li><a href="#contact" onClick={handleNavClick}>Contact</a></li>
           <li>
-            <a href={resumeUrl} download="Sanket_DevOps_Resume.pdf" onClick={handleNavClick}>
+            <a href={resumeUrl} download="Sanket_Chopade_Devops_Engineer_Resume.pdf" onClick={handleNavClick}>
               Download Resume
             </a>
           </li>

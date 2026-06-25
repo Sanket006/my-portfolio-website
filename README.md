@@ -4,7 +4,7 @@ A premium, production-ready portfolio website built with **React 19** and **Vite
 
 [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white)](https://vite.dev/)
-[![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-000000?logo=vercel)](https://vercel.com/)
+[![GitHub Pages](https://img.shields.io/badge/Deployed%20on-GitHub%20Pages-222222?logo=github)](https://sanket006.github.io/my-portfolio-website/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 ---
@@ -38,10 +38,13 @@ A premium, production-ready portfolio website built with **React 19** and **Vite
 
 ### Currently Studying
 
-- AWS Solutions Architect (SAA-C03)
-- Certified Kubernetes Administrator (CKA)
-- Platform Engineering
-- DevSecOps & GitOps
+- AWS Secrets Manager
+- Helm Chart Authoring
+- Kubernetes Network Policies
+- Prometheus Alerting Rules
+- Bash Scripting
+- Python Scripting
+
 
 ---
 
@@ -54,7 +57,7 @@ A premium, production-ready portfolio website built with **React 19** and **Vite
 | Styling | Vanilla CSS (Glassmorphism, CSS Variables) | — |
 | Typography | Inter + Outfit (Google Fonts) | — |
 | Linting | ESLint (Flat Config) | 10.x |
-| Deployment | Vercel | — |
+| Deployment | GitHub Pages | — |
 
 > **Node.js** ≥ 20 is recommended.
 
@@ -66,7 +69,7 @@ A premium, production-ready portfolio website built with **React 19** and **Vite
 devops-portfolio/
 ├── public/
 │   ├── favicon.svg         # Custom SVG favicon
-│   └── my_devops_resume.pdf # Downloadable resume file
+│   └── Sanket_Chopade_Devops_Engineer_Resume.pdf # Downloadable resume file
 ├── src/
 │   ├── components/
 │   │   ├── Navbar.jsx / .css
@@ -120,18 +123,26 @@ npm run lint       # Run ESLint
 
 ## ☁️ Deployment
 
-This site is deployed on **Vercel** via Git integration. Every push to `main` triggers an automatic deployment.
+This site is deployed on **GitHub Pages** using GitHub Actions.
 
-### Manual Deploy (Vercel CLI)
+### Continuous Deployment (CI/CD)
+
+Every push to the `main` branch triggers the GitHub Actions workflow [.github/workflows/static.yml](file:///.github/workflows/static.yml) which:
+1. Installs Node.js dependencies (`npm ci`).
+2. Builds the production bundle (`npm run build`).
+3. Uploads the `./dist` folder as an artifact.
+4. Deploys it automatically to GitHub Pages.
+
+### Manual Verification / Local Build
+
+Before pushing, you can test the production build locally:
 
 ```bash
-npm install -g vercel
+# Build the production package
+npm run build
 
-# Deploy to preview
-npm run deploy
-
-# Deploy to production
-npm run deploy:prod
+# Preview the build locally
+npm run preview
 ```
 
 ### Docker (Optional)
@@ -159,7 +170,7 @@ docker run -p 8080:80 devops-portfolio
 | Contact email | `src/components/Contact.jsx` — update the `mailto:` address |
 | GitHub / LinkedIn links | `src/components/Footer.jsx` |
 | Color palette & fonts | `src/index.css` (CSS variables in `:root`) |
-| Resume PDF | Replace `public/my_devops_resume.pdf`; hero and navbar buttons download it as `Sanket_DevOps_Resume.pdf` |
+| Resume PDF | Replace `public/Sanket_Chopade_Devops_Engineer_Resume.pdf`; hero and navbar buttons download it as `Sanket_Chopade_Devops_Engineer_Resume.pdf` |
 
 ---
 

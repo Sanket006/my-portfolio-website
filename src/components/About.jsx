@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import './About.css';
 
 const skills = [
@@ -17,10 +17,12 @@ const skills = [
 ];
 
 const learning = [
-  'AWS Solutions Architect (SAA-C03)',
-  'Certified Kubernetes Administrator (CKA)',
-  'Platform Engineering',
-  'DevSecOps & GitOps',
+  'AWS Secrets Manager',
+  'Helm Chart Authoring',
+  'Kubernetes Network Policies',
+  'Prometheus Alerting Rules',
+  'Bash Scripting',
+  'Python Scripting',
 ];
 
 const SkillBar = ({ skill, animate }) => (

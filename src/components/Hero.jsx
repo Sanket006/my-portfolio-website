@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './Hero.css';
 import Terminal from './Terminal';
 
@@ -15,7 +15,7 @@ const Hero = () => {
   const [displayed, setDisplayed] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
   const [charIndex, setCharIndex] = useState(0);
-  const resumeUrl = `${import.meta.env.BASE_URL}my_devops_resume.pdf`;
+  const resumeUrl = `${import.meta.env.BASE_URL}Sanket_Chopade_Devops_Engineer_Resume.pdf`;
 
   useEffect(() => {
     const currentRole = roles[roleIndex];
@@ -70,7 +70,7 @@ const Hero = () => {
           </p>
           <div className="hero-cta">
             <a href="#projects" className="btn btn-primary">View Projects</a>
-            <a href={resumeUrl} download="Sanket_DevOps_Resume.pdf" className="btn btn-outline">Download Resume</a>
+            <a href={resumeUrl} download="Sanket_Chopade_Devops_Engineer_Resume.pdf" className="btn btn-outline">Download Resume</a>
           </div>
           <Terminal />
         </div>
